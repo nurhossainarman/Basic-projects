@@ -1,0 +1,84 @@
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #6b8fdd;
+    --gray: #6b7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+
+header h1 {
+    font-size: 2.5 rem;
+    font-weight: 300;
+    color: var(--gray);
+    padding: 2rem 1rem;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: var(--dark);
+    
+    
+}
+
+
+input {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none; 
+
+}
+
+.main {
+    /* display: flex; 
+    flex-direction: column;  */
+    padding-top: 5rem;
+    text-align: center;
+    margin: auto;
+}
+#username {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+#password {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+#username::placeholder {
+    padding: 1rem;
+    color: var(--gray);
+}
+#password::placeholder {
+    padding: 1rem;
+    color: var(--gray);
+}
+
+#login {
+
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    border-radius: 1rem;
+    color: var(--light);
+    background-color: var(--darker);
+}
+
+
+
+
