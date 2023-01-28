@@ -10,29 +10,58 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>To do list</h1>
-         <form id="new-task-form">
-            <input  type="text" 
-                    id="new-task-input"
-                    placeholder="Your Task"/>
-            <input  type="submit"
-                    id="new-task-submit"
-                    value="Add task"/>
-         </form>
-    </header>
+    <div class="btn-div">
+        <button type="button" id="btn"></button>
+    </div>
+
+        <header>
+            <h1>To do list</h1>
+
+            <form id="new-task-form">
+                <input  type="text" 
+                id="new-task-input"
+                placeholder="Your Task"/>
+                <input  type="submit"
+                id="new-task-submit"
+                value="Add task"/>
+                </form>
+        </header>
+    
+
+    
 <main>
     <section class="task-list">
         <h2>Tasks</h2>
-        <div id="tasks">
-         
-                </div>
+        <div id="tasks"> 
+        </div>
             
     </section>
 </main>
+
+        
+<script>
+    let validUser = sessionStorage.getItem("key");
+    let button = document.getElementById("btn");
+    let loadLoginPage = () => window.location.href = "login.html"; 
+    
+    if (validUser == null){
+        button.innerHTML= "Log In";
+        button.onclick = function(){
+            loadLoginPage();
+         }  
+    }   
+    else{
+        
+         button.innerHTML= "Log Out";
+        button.onclick = function(){
+            sessionStorage.removeItem("key");
+            loadLoginPage();
+        }   
+    }
+        
+    </script>
 <script src="main.js"></script>
 
 </body>
 </html>
 
-<

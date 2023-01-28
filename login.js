@@ -3,12 +3,14 @@ window.addEventListener('load', ()=>{
     const username = document.querySelector('#username');
     const password = document.querySelector('#password');
 
+
     form.addEventListener('submit', (e)=>{
         e.preventDefault();
         const user = username.value;
         const pass = password.value;
         
-        if (user == "arman" && pass == "arman" ) {
+        if (user == "admin" && pass == "arman" ) {
+            sessionStorage.setItem("key", user);
             window.location.href = "index.html";
         }
         else{

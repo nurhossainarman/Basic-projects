@@ -27,6 +27,21 @@ body {
 
 }
 
+
+.btn-div {
+    margin-top: 1rem;
+    margin-left: 90%;
+}
+.btn-div #btn{
+    color: var(--light);
+    font-size: 1.125rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to left, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
 header {
     padding: 2rem 1rem;
     max-width: 800px;
